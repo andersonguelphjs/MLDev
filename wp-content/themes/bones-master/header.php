@@ -41,7 +41,7 @@
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
-		<div id="mySidenav" class="sidenav">
+		<div id="mySidenav" class="sidenav d-md-none">
 		  <a id="closeNav" href="javascript:void(0)" class="closebtn">&times;</a>
 		  <a href="#">About</a>
 		  <a href="#">Services</a>
@@ -49,6 +49,14 @@
 		  <a href="#">Contact</a>
 		</div>
 		<div id="main" class="container-fluid">
-			<div class="row">
+			<div class="row d-md-none">
 				<span id="openNav" style="font-size:30px;cursor:pointer" >&#9776;</span>
+			</div>
+			<div class="row d-none d-md-inline">
+					<ul class="myNav">
+					  <li><a href="#home">Home</a></li>
+					  <li><a href="#news">News</a></li>
+					  <li><a href="#contact">Contact</a></li>
+					  <li><a href="#about">About</a></li>
+					</ul>
 			</div>
